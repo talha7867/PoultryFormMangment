@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Poultry Form"
+            android:textSize="@dimen/_25sdp"
+            android:textAlignment="center"
+            android:textColor="#FFD740"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Breader"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.807"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Flocks"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="@dimen/_120sdp"
+
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Eggs"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="@dimen/_120sdp"
+
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Medicine"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_110sdp"
+
+            android:backgroundTint="@color/black"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardView4"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/cardView3"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4"
+            app:layout_constraintVertical_bias="0.395">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Flocks  Mededication"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

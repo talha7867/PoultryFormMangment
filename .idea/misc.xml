@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/drawable-v24/roundbtn.xml" value="0.145" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/drawable/roundbtn.xml" value="0.145" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/activity_breader.xml" value="0.25" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/add_breader_dialouge.xml" value="0.25" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/breader_items.xml" value="0.1875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
