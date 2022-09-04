@@ -117,5 +117,10 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("Select * from Breader",null);
         return cursor;
     }
+    public Cursor getAllFlocks() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from Flocks",null);
+        return cursor;
+    }
 
 }

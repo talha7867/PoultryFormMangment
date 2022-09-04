@@ -94,6 +94,7 @@ public class Breader extends AppCompatActivity {
             recyclerView.setAdapter(breaderAdapter);
 
 
+
         }
     }
 }

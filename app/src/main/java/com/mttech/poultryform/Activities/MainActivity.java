@@ -9,7 +9,7 @@ import android.os.Bundle;
 import com.mttech.poultryform.R;
 
 public class MainActivity extends AppCompatActivity {
-    CardView cardView;
+    CardView cardView,cardView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
         cardView = findViewById(R.id.cardView);
         cardView.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,Breader.class);
+            startActivity(intent);
+        });
+
+        cardView2 = findViewById(R.id.cardView2);
+        cardView2.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,FlocksForm.class);
             startActivity(intent);
         });
 

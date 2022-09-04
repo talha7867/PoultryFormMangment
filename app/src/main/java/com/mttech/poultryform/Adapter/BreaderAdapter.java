@@ -24,12 +24,7 @@ public class BreaderAdapter extends RecyclerView.Adapter<BreaderAdapter.MyViewHo
         this.breader_name = breader_name;
         this.breader_number = breader_number;
     }
-    //    public BreaderAdapter(Context context, ArrayList breader_id, ArrayList breader_name, ArrayList breader_number) {
-//        this.context = context;
-//        this.breader_id = breader_id;
-//        this.breader_name = breader_name;
-//        this.breader_number = breader_number;
-//    }
+
 
     @NonNull
     @Override
@@ -45,6 +40,7 @@ public class BreaderAdapter extends RecyclerView.Adapter<BreaderAdapter.MyViewHo
         holder.id.setText(String.valueOf(breader_id.get(position)));
         holder.name.setText(breader_name.get(position));
         holder.number.setText(String.valueOf(breader_number.get(position)));
+
 
     }
 

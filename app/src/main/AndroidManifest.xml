@@ -13,10 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PoultryForm"
         tools:targetApi="31">
-
-        <activity android:name=".Activities.Breader"
-            android:exported="false"
-            />
+        <activity
+            android:name=".Activities.FlocksForm"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Breader"
+            android:exported="false" />
         <activity
             android:name=".Activities.MainActivity"
             android:exported="true">
