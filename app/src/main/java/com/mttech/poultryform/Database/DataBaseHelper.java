@@ -16,27 +16,22 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 //    private static final String Eggs = "eggs";
 //    private static final String Medicine = "medicine";
 
-
     public DataBaseHelper(Context context){
         super(context,DataBase_Name,null,1);
     }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //Create DataBase Table
-
-
         String breader = " CREATE TABLE Breader (id INTEGER PRIMARY KEY, name TEXT, number INTEGER)";
         String flocks = " CREATE TABLE Flocks (id INTEGER PRIMARY KEY, name TEXT, cage_no INTEGER, purchase_Date STRING, hatch_date TEXT, clean_date TEXT, vacc_date TEXT)";
         String eggs = " CREATE TABLE Eggs (id INTEGER PRIMARY KEY, date TEXT, egg_no INTEGER, condition TEXT, id_breader INTEGER )";
-        String medicine = " CREATE TABLE Medicine (id INTEGER PRIMARY KEY, name TEXT, formula TEXT, quantity INTEGER,level INTEGER)";
+        String medicine = " CREATE TABLE Medicine (id INTEGER PRIMARY KEY, name TEXT, formula TEXT, quantity TEXT,level TEXT)";
         String flock_medicine =  " CREATE TABLE Flock_Med (id INTEGER PRIMARY KEY, quantity TEXT, id_flocks INTEGER, id_medicine INTEGER)";
-
         sqLiteDatabase.execSQL(breader);
         sqLiteDatabase.execSQL(flocks);
         sqLiteDatabase.execSQL(eggs);
         sqLiteDatabase.execSQL(medicine);
         sqLiteDatabase.execSQL(flock_medicine);
-
     }
 
     @Override
@@ -87,7 +82,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         return result != -1;
 
     }
-     public  boolean insert_medicine(String name, String formula , int quantity, int level ){
+     public  boolean insert_medicine(String name, String formula , String quantity, String level ){
          SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
          ContentValues values = new ContentValues();
          values.put("name",name);
@@ -122,5 +117,19 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("Select * from Flocks",null);
         return cursor;
     }
-
+    public Cursor getAllMedicine() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from Medicine",null);
+        return cursor;
+    }
+    public Cursor getAllEggs() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from Eggs",null);
+        return cursor;
+    }
+    public Cursor getflocks_med() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from Flock_Med",null);
+        return cursor;
+    }
 }

@@ -76,6 +76,10 @@ public class FlocksForm extends AppCompatActivity {
                     Toast.makeText(this, "Data Inserted", Toast.LENGTH_SHORT).show();
 
                     dialog.dismiss();
+                    finish();
+                    overridePendingTransition(0, 0);
+                    startActivity(getIntent());
+                    overridePendingTransition(0, 0);
                 }
             }
         });
@@ -93,11 +97,11 @@ public class FlocksForm extends AppCompatActivity {
             Hatch_Date.clear();
             Clean_Date.clear();
             while (res.moveToNext()) {
-                Flock_Name.add(res.getString(0));
-                Cage_Number.add(res.getString(1));
-                Purchase_Date.add(res.getString(2));
-                Hatch_Date.add(res.getString(3));
-                Clean_Date.add(res.getString(4));
+                Flock_Name.add(res.getString(1));
+                Cage_Number.add(res.getString(2));
+                Purchase_Date.add(res.getString(3));
+                Hatch_Date.add(res.getString(4));
+                Clean_Date.add(res.getString(5));
             }
             flocksFormAdapter = new FlocksFormAdapter(this,Flock_Name,Cage_Number,Purchase_Date,Hatch_Date,Clean_Date);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));

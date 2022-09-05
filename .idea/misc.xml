@@ -6,12 +6,16 @@
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/drawable-v24/roundbtn.xml" value="0.145" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/drawable/roundbtn.xml" value="0.145" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/activity_breader.xml" value="0.25" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/activity_eggs_form.xml" value="0.25" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/activity_flocks_form.xml" value="0.25" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/activity_medicine_form.xml" value="0.25" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/add_breader_dialouge.xml" value="0.25" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/add_flocks_dialouge.xml" value="0.25" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/add_medicine_dialouge.xml" value="0.25" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/breader_items.xml" value="0.24615384615384617" />
         <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/flocks_items.xml" value="0.25" />
+        <entry key="..\:/Users/M Talha/AndroidStudioProjects/PoultryForm/app/src/main/res/layout/medicine_items.xml" value="0.25" />
       </map>
     </option>
   </component>

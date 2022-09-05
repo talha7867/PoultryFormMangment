@@ -69,6 +69,10 @@ public class Breader extends AppCompatActivity {
                       breader_no.getText().clear();
                       breader_name.getText().clear();
                       dialog.dismiss();
+                      finish();
+                      overridePendingTransition(0, 0);
+                      startActivity(getIntent());
+                      overridePendingTransition(0, 0);
                   }
               }
 
