@@ -9,7 +9,7 @@ import android.os.Bundle;
 import com.mttech.poultryform.R;
 
 public class MainActivity extends AppCompatActivity {
-    CardView cardView,cardView2,cardView4;
+    CardView cardView,cardView2,cardView4 ,cardView3,cardView5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,16 @@ public class MainActivity extends AppCompatActivity {
         cardView4 = findViewById(R.id.cardView4);
         cardView4.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this,MedicineForm.class);
+            startActivity(intent);
+        });
+        cardView3 = findViewById(R.id.cardView3);
+        cardView3.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,EggsForm.class);
+            startActivity(intent);
+        });
+        cardView5 = findViewById(R.id.cardView5);
+        cardView5.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,MedicineFlocksForm.class);
             startActivity(intent);
         });
 

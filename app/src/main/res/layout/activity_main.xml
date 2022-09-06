@@ -44,7 +44,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Breader"
+                android:text="Breeder"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_13sdp" />
@@ -126,6 +126,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_110sdp"
 

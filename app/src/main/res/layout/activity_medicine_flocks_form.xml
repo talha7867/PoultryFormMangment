@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.Breader">
-
+    tools:context=".Activities.MedicineFlocksForm">
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="Breeders Forms"
+        android:text="Medicine&amp;Flock Forms"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textAlignment="center"

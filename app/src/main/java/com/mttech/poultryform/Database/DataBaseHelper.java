@@ -24,9 +24,9 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         //Create DataBase Table
         String breader = " CREATE TABLE Breader (id INTEGER PRIMARY KEY, name TEXT, number INTEGER)";
         String flocks = " CREATE TABLE Flocks (id INTEGER PRIMARY KEY, name TEXT, cage_no INTEGER, purchase_Date STRING, hatch_date TEXT, clean_date TEXT, vacc_date TEXT)";
-        String eggs = " CREATE TABLE Eggs (id INTEGER PRIMARY KEY, date TEXT, egg_no INTEGER, condition TEXT, id_breader INTEGER )";
+        String eggs = " CREATE TABLE Eggs (id INTEGER PRIMARY KEY, date TEXT, egg_no INTEGER, condition TEXT, breader TEXT )";
         String medicine = " CREATE TABLE Medicine (id INTEGER PRIMARY KEY, name TEXT, formula TEXT, quantity TEXT,level TEXT)";
-        String flock_medicine =  " CREATE TABLE Flock_Med (id INTEGER PRIMARY KEY, quantity TEXT, id_flocks INTEGER, id_medicine INTEGER)";
+        String flock_medicine =  " CREATE TABLE Flock_Med (id INTEGER PRIMARY KEY, quantity TEXT, id_flocks TEXT, id_medicine TEXT)";
         sqLiteDatabase.execSQL(breader);
         sqLiteDatabase.execSQL(flocks);
         sqLiteDatabase.execSQL(eggs);
@@ -71,13 +71,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     }
 
 
-    public  boolean insert_eggs( String date , int egg_no , String conditions , int breader_id){
+    public  boolean insert_eggs( String date , String egg_no , String conditions , String breader){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("date",date);
         values.put("egg_no",egg_no);
         values.put("condition",conditions);
-        values.put("id_breader", breader_id);
+        values.put("breader", breader);
         long result =  sqLiteDatabase.insert("Eggs",null,values);
         return result != -1;
 
@@ -94,12 +94,12 @@ public class DataBaseHelper extends SQLiteOpenHelper {
 
      }
 
-     public  boolean insert_flocksMedcine( String quantity , int flocks_id, int medicine_id ){
+     public  boolean insert_flocksMedcine( String quantity , String flocks, String medicine ){
          SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
          ContentValues values = new ContentValues();
          values.put("quantity",quantity);
-         values.put("id_flocks",flocks_id);
-         values.put("id_medicine",medicine_id);
+         values.put("id_flocks",flocks);
+         values.put("id_medicine",medicine);
          long result =  sqLiteDatabase.insert("Flock_Med",null,values);
          return result != -1;
 

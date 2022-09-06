@@ -27,8 +27,8 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Medicine"
+                android:layout_marginStart="32dp"
+                android:text="Date"
 
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp"
@@ -36,11 +36,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/med_name"
+                android:id="@+id/bed_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="Name"
+                android:text="01/08/2002"
                 android:textSize="@dimen/_14sdp"
                 app:layout_constraintEnd_toEndOf="@+id/textView10"
                 app:layout_constraintHorizontal_bias="0.482"
@@ -51,19 +51,19 @@
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="Formula"
+                android:layout_marginStart="28dp"
+                android:text="Breeder"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp"
                 app:layout_constraintStart_toEndOf="@+id/textView10"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/formula"
+                android:id="@+id/condition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="XGHKM"
+                android:text="Hen"
 
                 android:textSize="@dimen/_14sdp"
                 app:layout_constraintEnd_toEndOf="@+id/textView11"
@@ -76,22 +76,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:text="Quantity"
+                android:text="Condition"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp"
                 app:layout_constraintStart_toEndOf="@+id/textView11"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/quantity"
+                android:id="@+id/egg_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5ML"
                 android:layout_marginTop="6dp"
+                android:text="Good"
 
                 android:textSize="@dimen/_14sdp"
                 app:layout_constraintEnd_toEndOf="@+id/textView12"
-                app:layout_constraintHorizontal_bias="0.634"
+                app:layout_constraintHorizontal_bias="0.38"
                 app:layout_constraintStart_toStartOf="@+id/textView12"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -99,20 +99,20 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Level"
+                android:text="Egg No"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_16sdp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.673"
                 app:layout_constraintStart_toEndOf="@+id/textView12"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/level"
+                android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="01/08"
-
+                android:text="10"
                 android:textSize="@dimen/_14sdp"
                 app:layout_constraintEnd_toEndOf="@+id/textView13"
                 app:layout_constraintStart_toStartOf="@+id/textView13"
